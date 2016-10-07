@@ -84,6 +84,13 @@ max_future_list_size = 10
 parallel_index_batch_size = 3
 
 ######
-## IO
+# IO
 ######
 max_values_per_column = 5000
+
+# Instead of editing this file, create a local_config.py to override default
+# settings.
+try:
+    from local_config import *
+except ImportError:
+    pass
